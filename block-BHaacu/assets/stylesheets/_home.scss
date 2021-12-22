@@ -1,0 +1,246 @@
+// Header Top
+.header-top {
+    background-color: $primary;
+    padding: 0.8rem 0;
+    .header-contact a {
+        margin-right: 0.8rem;
+    }
+    .header-icons a {
+        margin-left: 1rem;
+    }
+    a {
+        color: white;
+        font-size: 1rem;
+        i {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        span {
+            font-size: 0.8rem;
+            color: rgba(235, 229, 229, 0.9);
+            &:hover {
+                color: rgb(0, 17, 255);
+            }
+        }
+    }
+}
+
+// Header Bottom
+
+.header-bottom {
+    background-color: $secondary;
+    .header-brand {
+        font-size: 1.3rem;
+        font-weight: 800;
+        padding: 0.8rem 0;
+        .brand-uni {
+            color: $primary;
+        }
+        .brand-tech {
+            color: $text-primary;
+        }
+    }
+    .bars {
+        display: none;
+    }
+    #toggle {
+        display: none;
+    }
+    .nav-item {
+        margin-left: 2rem;
+        font-size: 1rem;
+        padding: 1.5rem .5rem;
+        a {
+            i {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 0.8rem;
+                margin-left: 1rem;
+            }
+        }
+        .sub-menu {
+            position: absolute;
+            background-color: $secondary;
+            width: 9rem;
+            border-radius: 3px;
+            left: 4.5rem;
+            transform: translate(-50%);
+            top: 3.8rem;
+            padding: 1rem;
+            display: none;
+            li a {
+                display: inline-block;
+                margin-bottom: 0.5rem;
+                padding: 0 0.1rem;
+                font-size: 0.8rem;
+                color: $text-secondary;
+            }
+        }
+    }
+    .dropdown {
+        position: relative;
+    }
+}
+
+// Hero Section
+.hero {
+    background: url(../media/banner-1.jpg) no-repeat center center;
+    height: 95vh;
+    background-size: cover;
+    article {
+       margin-left: 4rem;
+       width: 45%;
+       h1 {
+           font-size: 3rem;
+           font-weight: 800;
+           margin-bottom: 0.5rem;
+           color: $text-primary;
+       }
+       p {
+           color: $text-secondary;
+           margin-bottom: 1rem;
+           font-weight: 600;
+       }
+       button {
+           background-color: $primary;
+           border-radius: 3rem;
+           padding: 0.5rem 1rem;
+           border: 0;
+           a {
+               color: white;
+               font-size: 0.8rem;
+           }
+       }
+    }
+}
+// Srevice Section 
+.services {
+    margin-top: 4rem;
+    .service-col {
+        border: 1px solid rgb(224, 223, 223);
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+        img {
+            width: 4rem;
+            margin-bottom: 1rem; 
+        }
+        h3 {
+            color: $text-primary;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        p {
+            color: $fade;
+            margin-bottom: 2rem;
+        }
+    }
+}
+// Get All Solutions
+.all-solution {
+    background-color: $secondary;
+    article {
+        width: 50%;
+    }
+    h2 {
+        margin-bottom: 2rem;
+    }
+    p {
+        margin-bottom: 2.5rem;
+    }
+}
+// Top Consulting Firm 
+.top-firm {
+   article {
+    img {
+        width: 4rem;
+        margin-bottom: 2rem;
+    }
+    h2 {
+        margin-bottom: 1.5rem;
+    }
+    p {
+        margin-bottom: 2rem;
+    }
+   }
+}
+// Request Quote
+.request-quote {
+    background-color: $primary;
+    color: white;
+    h4 {
+        font-size: 1.2rem;
+        margin-bottom: 0.6rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    button {
+        border: 0;
+        background-color: $primary;
+        border: 1px solid white;
+        padding: 0.5rem 1.5rem;
+        border-radius: 2rem;
+        a {
+            color: white;
+        }
+    }
+}
+// Clients
+.scroll-none::-webkit-scrollbar {
+    display: none;
+}
+.clients {
+    background-color: $secondary;
+    overflow: auto;
+    .client-container{
+        overflow: auto;
+        height: 7rem;
+        margin-top: 3rem;
+        .client {
+            height: 7rem;
+            margin:1rem 3rem 1rem 0;
+            width: 10%;
+            filter: grayscale(100%);
+            .client img {
+                height: 3rem;
+                display: block;
+            }
+            &:hover {
+                filter: grayscale(0);
+            }
+        }
+     }
+}
+
+// Footer 
+
+footer {
+    background-color: $text-primary;
+    ul {
+        .footer-heading {
+            color: rgb(145, 140, 140);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        li:not(:where(.footer-heading, #not)) {
+           margin-bottom: 1rem;
+        }
+        a {
+            color: rgb(99, 96, 96);
+        }
+        .footer-icons a {
+            margin-right: 1rem;
+        }
+    }
+    .footer-end {
+        padding-bottom: 2rem;
+        li {
+            font-size: 0.8rem;
+            color: rgb(99, 96, 96);
+            small {
+                color: rgb(145, 140, 140);
+            }
+        }
+    }
+}
